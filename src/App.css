@@ -1,0 +1,72 @@
+.App {
+  /* text-align: center; */
+  background-color: #222;
+  /* height: 100vh; */
+  padding: 50px;
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  display: flex;
+  color: #61dafb;
+  padding-bottom: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.elements-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding-left: 0;
+  /* grid-gap: 10px; */
+}
+
+:nth-child(2) {
+  grid-column: 8/9;
+}
+:nth-child(3), :nth-child(11), :nth-child(19),:nth-child(37) {
+  grid-column: 1/2;
+}
+:nth-child(29) {
+  grid-column: 1/2;
+}
+:nth-child(47) {
+  grid-column: 1/2;
+}
+
+:nth-child(28):hover, :nth-child(46):hover, :nth-child(56):hover, :nth-child(66):hover, :nth-child(76):hover, :nth-child(86):hover, :nth-child(96):hover, :nth-child(106):hover, :nth-child(116):hover {
+  transform: scale(1.5) translateX(-20px) !important
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+
+}
+.copy-link {
+  text-decoration: none;
+  color: #61dafb;
+
+}

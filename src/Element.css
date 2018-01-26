@@ -1,0 +1,64 @@
+.el {
+    /* width: 100px; */
+    height: 100px;
+    color: #886;
+    border: 2px solid #886;
+    transition: all .5s;
+    margin: 5px;
+    background: black;
+}
+
+.el:hover {
+    transform: scale(1.5);
+    width: 150px;
+    transition: all .8s;
+    color: #26e81b;
+    border: 1px solid #26e81b;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.el-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.el .el-main .el-symbol {
+    font-size: 2.5rem;
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+.el:hover .el-main .el-symbol {
+    transform: scale(1.4);
+    color: #26e81b;
+    transition: all .8s;
+    margin-top: 4px;
+    margin-right: 14px;
+}
+
+.el:hover .el-main .el-id {
+    margin-left: 10px;
+    margin-top: 6px;
+    transition: all .8s;
+    color: #26e81b;
+    opacity: 1;
+}
+
+.el .el-main .el-id {
+    font-size: 2rem;
+    transition: all .8s;
+    opacity: 0;
+}
+
+.el-details {
+    margin-left: 3px;
+    opacity: 0;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.el:hover .el-details {
+    opacity: 1;
+}
