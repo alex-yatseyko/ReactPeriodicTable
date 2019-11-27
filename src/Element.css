@@ -1,5 +1,5 @@
 .el {
-    /* width: 100px; */
+    width: 100px;
     height: 100px;
     color: #886;
     border: 2px solid #886;
@@ -16,6 +16,7 @@
     border: 1px solid #26e81b;
     cursor: pointer;
     box-shadow: 0 0 1rem #ffc600;
+    position: relative;
 }
 
 .el-main {
@@ -43,10 +44,11 @@
     transition: all .8s;
     color: #26e81b;
     opacity: 1;
+    font-size: 2rem;
 }
 
 .el .el-main .el-id {
-    font-size: 2rem;
+    font-size: 1rem;
     transition: all .8s;
     opacity: 0;
 }

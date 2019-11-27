@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Element.css';
+import { Link } from 'react-router-dom';
 //import elements from '../src/PeriodicTableJSON.json'
 
 class Element extends Component {

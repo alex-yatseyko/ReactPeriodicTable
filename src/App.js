@@ -29,9 +29,9 @@ class App extends Component {
           })
         }
         </ul>
-        <div className="copy">
+        {/* <div className="copy">
           <a className="copy-link" href="https://www.facebook.com/alchemist.klesk">&copy; Alex Yatseyko</a>
-        </div>
+        </div> */}
       </div>
     );
   }

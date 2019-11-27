@@ -37,9 +37,10 @@
 .elements-list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 100px);
   padding-left: 0;
-  /* grid-gap: 10px; */
+  grid-gap: 1.5%;
+  grid-row-gap: 5px;
 }
 
 :nth-child(2) {
@@ -68,5 +69,4 @@
 .copy-link {
   text-decoration: none;
   color: #61dafb;
-
 }
