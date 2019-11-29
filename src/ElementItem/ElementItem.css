@@ -1,4 +1,27 @@
 body {
-    background: black;
-    color: aliceblue;
+    background: #222;
+    color: #886;
+}
+a {
+    color: #26e81b;
+}
+.Element {
+    width: 80%;
+    margin: auto;
+}
+.bg-symbol {
+    position: absolute;
+    font-size: 40rem;
+    top: -4rem;
+    opacity: .2;
+    z-index: -1;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.metalloid {
+    color: #aaa9ad;
+}
+.nonmetal {
+    color: royalblue;
 }
