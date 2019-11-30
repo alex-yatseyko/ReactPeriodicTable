@@ -2,26 +2,83 @@ body {
     background: #222;
     color: #886;
 }
-a {
+.Element a {
     color: #26e81b;
+}
+.back {
+    border: 1px solid;
+    padding: 20px;
+    padding: 10px 20px;
+    transition: .5s;
+    top: 15px;
+    position: relative;
+}
+.back:hover {
+    background: #26e81b;
+    color: #222;
 }
 .Element {
     width: 80%;
     margin: auto;
+    overflow-y: hidden !important;
+}
+.elementHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+.bg-number {
+    position: absolute;
+    z-index: -1;
+    color: #fff;
+    opacity: .29;
+    font-size: 10rem;
+    /* right: 0; */
+    /* top: -10rem; */
+    top: -8rem;
+    right: 14rem;
 }
 .bg-symbol {
     position: absolute;
     font-size: 40rem;
-    top: -4rem;
-    opacity: .2;
+    /* top: -4rem; */
+    opacity: .09;
     z-index: -1;
     color: #fff;
     margin: 0;
     padding: 0;
 }
-.metalloid {
+.symbol {
+    border: 1px solid;
+    font-size: 4rem;
+    /* box-shadow: 10px 10px 5px 0px rgba(214,214,214,1); */
+    box-shadow: 7px 7px 5px -5px rgba(214,214,214,1);
+    margin-right: 3rem;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.appearance, .cat {
+    text-transform: capitalize;
+}
+.metalloid, .metal {
     color: #aaa9ad;
 }
 .nonmetal {
     color: royalblue;
+}
+.actinide {
+    color: #ff99cc;
+}
+.lanthanide {
+    color: #ffbfff;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
