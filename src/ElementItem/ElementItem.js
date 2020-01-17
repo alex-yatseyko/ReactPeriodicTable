@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import elements from '../PeriodicTableJSON.json'
 import './ElementItem.css';
 import { useParams, Link } from "react-router-dom";
@@ -33,7 +33,7 @@ export default function ElementItem() {
       
       <div className="navigation">
         <Link to={`/element/${id-1}`}>← Previous</Link>
-        <Link to={`/element/${parseInt(id) + 1}`}>Next →</Link>
+        <Link to={`/element/${parseInt(id, 10) + 1}`}>Next →</Link>
       </div>
     </div>
   )

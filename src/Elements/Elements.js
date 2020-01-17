@@ -16,19 +16,21 @@ export default class Elements extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="Elements">React Periodic Table</h1>
           </header>
-          <ul className="elements-list">
-          {
-            this.state.elements.map(el => {
-              return <Element
-                key={el.number}
-                id={el.number}
-                name={el.name}
-                mass={el.atomic_mass.toFixed(3)}
-                symbol={el.symbol}     
-              />;
-            })
-          }
-          </ul>
+          <div className="container">
+            <ul className="elements-list">
+            {
+              this.state.elements.map(el => {
+                return <Element
+                  key={el.number}
+                  id={el.number}
+                  name={el.name}
+                  mass={el.atomic_mass.toFixed(3)}
+                  symbol={el.symbol}     
+                />;
+              })
+            }
+            </ul>
+          </div>
           {/* <div className="copy">
             <a className="copy-link" href="https://www.facebook.com/alchemist.klesk">&copy; Alex Yatseyko</a>
           </div> */}

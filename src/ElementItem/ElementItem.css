@@ -7,7 +7,6 @@ body {
 }
 .back {
     border: 1px solid;
-    padding: 20px;
     padding: 10px 20px;
     transition: .5s;
     top: 15px;
@@ -33,15 +32,12 @@ body {
     color: #fff;
     opacity: .29;
     font-size: 10rem;
-    /* right: 0; */
-    /* top: -10rem; */
     top: -8rem;
     right: 14rem;
 }
 .bg-symbol {
     position: absolute;
     font-size: 40rem;
-    /* top: -4rem; */
     opacity: .09;
     z-index: -1;
     color: #fff;
@@ -51,7 +47,6 @@ body {
 .symbol {
     border: 1px solid;
     font-size: 4rem;
-    /* box-shadow: 10px 10px 5px 0px rgba(214,214,214,1); */
     box-shadow: 7px 7px 5px -5px rgba(214,214,214,1);
     margin-right: 3rem;
     margin-left: 10px;
@@ -81,4 +76,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    position: fixed;
+    width: 80%;
+    bottom: 3vh;
+}
+.navigation a {
+    border: 1px solid;
+    padding: 10px 20px;
 }

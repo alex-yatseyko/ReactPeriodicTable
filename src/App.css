@@ -72,3 +72,7 @@ a {
   text-decoration: none;
   color: #61dafb;
 }
+
+.container {
+  margin: auto;
+}
