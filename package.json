@@ -1,6 +1,7 @@
 {
   "name": "men",
   "version": "0.1.0",
+  "homepage": "https://alex-yatseyko.github.io/ReactPeriodicTable",
   "private": true,
   "dependencies": {
     "jquery": "*",
@@ -10,12 +11,15 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^3.10.0"
   }
 }
